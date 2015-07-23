@@ -22,25 +22,87 @@ body{height:100%;margin:0px;padding:0px}
 
 <script type="text/javascript"> 
 var map = new BMap.Map("container");          // 创建地图实例  
-var point = new BMap.Point(116.404, 39.915);  // 创建点坐标  
+//var point = new BMap.Point(116.404, 39.915);  // 创建点坐标  
 map.centerAndZoom("栖霞", 15);                 // 初始化地图，设置中心点坐标和地图级别  
 map.addControl(new BMap.NavigationControl());   //缩放
 map.addControl(new BMap.ScaleControl());    //比例尺
 map.addControl(new BMap.OverviewMapControl());    //大图概览
 //map.addControl(new BMap.MapTypeControl());     //地图显示形态 2维 卫星图
-var geolocation = new BMap.Geolocation();
-	geolocation.getCurrentPosition(function(r){
-		if(this.getStatus() == BMAP_STATUS_SUCCESS){
-			var mk = new BMap.Marker(r.point);
-			map.addOverlay(mk);
-			map.panTo(r.point);
-			alert('您的位置：'+r.point.lng+','+r.point.lat);
-				mk.setAnimation(BMAP_ANIMATION_BOUNCE);
-		}
-		else {
-			alert('failed'+this.getStatus());
-		}        
-	},{enableHighAccuracy: true})
+
+
+
+
+function  addMarker(bikepoint){
+	var marker=new Bamp.marker(bikepoint);
+	map.addOverlay(marker)
+}
+
+//自行车停放点 --begin
+var bikepoints=[
+118.914648 ,	32.120581,
+ 118.922401 ,	32.100548,
+ 118.946664 ,	32.105733,
+ 118.910681 ,	32.120367,
+ 118.921747 ,	32.115649,
+ 118.933787 ,	32.109915,
+ 118.937701 ,	32.130748,
+ 118.931509 ,	32.12883, 
+ 118.949216 ,	32.130901,
+ 118.966217 ,	32.115542,
+ 118.937403 ,	32.112622,
+ 118.941395 ,	32.125504,
+ 118.918842 ,	32.105496,
+ 118.96677	,	32.114801,
+ 118.927722 ,	32.108264,
+ 118.927466 ,	32.12821,
+ 118.936241 ,	32.101206,
+ 118.941414 ,	32.129563,
+ 118.938594 ,	32.13029,
+ 118.941748 ,	32.122538,
+ 118.936047 ,	32.104639,
+ 118.933238 ,	32.097642,
+ 118.928546 ,	32.130779,
+ 118.914284 ,	32.104241,
+ 118.917124 ,	32.096832,
+ 118.924369 ,	32.102055,
+ 118.926334 ,	32.095868,
+ 118.911923 ,	32.103507,
+ 118.901347 ,	32.105404,
+ 118.943624 ,	32.102873,
+ 118.914616 ,	32.10259, 
+ 118.934678 ,	32.100334,
+ 118.918546 ,	32.102108,
+ 118.988277 ,	32.137659,
+ 118.927824 ,	32.108302,
+ 118.924062 ,	32.098285,
+ 118.925735 ,	32.104953,
+ 118.945655 ,	32.109586,
+ 118.961744 ,	32.117836]
+
+//自行车停放点 --end
+
+for (var i = 0; i < 98; i+=2) {
+		var point = new BMap.Point(bikepoints[i], bikepoints[i+1]);
+		addMarker(point);
+	}
+
+
+// var geolocation = new BMap.Geolocation();
+// 	geolocation.getCurrentPosition(function(r){
+// 		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+// 			var myIcon = new BMap.Icon("http://developer.baidu.com/map/jsdemo/img/fox.gif", new BMap.Size(300,157));
+// 			var mk = new BMap.Marker(r.point,{icon:myIcon});
+// 			map.addOverlay(mk);
+// 			map.panTo(r.point);
+// 			mk.setAnimation(BMAP_ANIMATION_BOUNCE);
+// 		}
+// 		else {
+// 			alert('failed'+this.getStatus());
+// 		}        
+// 	},{enableHighAccuracy: true})
+
+
+
 </script>  
 </body>  
 </html>
