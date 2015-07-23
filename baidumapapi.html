@@ -7,7 +7,7 @@
 <style type="text/css">  
 html{height:100%}  
 body{height:100%;margin:0px;padding:0px}  
-#container{height:100%}  
+#allmap{height:100%}  
 </style>  
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=EDb6761c5b033eaa0cd169651f54c3d2">
 //v1.5版本的引用方式：src="http://api.map.baidu.com/api?v=1.5&ak=您的密钥"
@@ -19,12 +19,13 @@ body{height:100%;margin:0px;padding:0px}
 <div id="allmap">
 
 </div> 
-
+</body>  
+</html>
 <script type="text/javascript"> 
 
-var map = new BMap.Map("allmap");          // 创建地图实例  
-//var point = new BMap.Point(116.404, 39.915);  // 创建点坐标  
-map.centerAndZoom("栖霞", 15);                 // 初始化地图，设置中心点坐标和地图级别  
+var map = new BMap.Map("allmap");  
+var centerpoint=new BMap.Point(118.939576,32.11258)        // 创建地图实例    
+map.centerAndZoom(centerpoint, 15);                 // 初始化地图，设置中心点坐标和地图级别  
 map.addControl(new BMap.NavigationControl());   //缩放
 map.addControl(new BMap.ScaleControl());    //比例尺
 map.addControl(new BMap.OverviewMapControl());    //大图概览
@@ -100,5 +101,3 @@ for (var i = 0; i < 98; i+=2) {
 
 
 </script>  
-</body>  
-</html>
