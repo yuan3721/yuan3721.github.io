@@ -28,15 +28,10 @@ map.addControl(new BMap.NavigationControl());   //缩放
 map.addControl(new BMap.ScaleControl());    //比例尺
 map.addControl(new BMap.OverviewMapControl());    //大图概览
 //map.addControl(new BMap.MapTypeControl());     //地图显示形态 2维 卫星图
-
-
-
-
-function  addMarker(bikepoint){
-	var marker=new Bamp.marker(bikepoint);
-	map.addOverlay(marker)
-}
-
+function addMarker(point){
+	  var marker = new BMap.Marker(point);
+	  map.addOverlay(marker);
+	}
 //自行车停放点 --begin
 var bikepoints=[
 118.914648 ,	32.120581,
