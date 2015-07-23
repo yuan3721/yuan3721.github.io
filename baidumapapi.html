@@ -35,6 +35,7 @@ var geolocation = new BMap.Geolocation();
 			map.addOverlay(mk);
 			map.panTo(r.point);
 			alert('您的位置：'+r.point.lng+','+r.point.lat);
+				mk.setAnimation(BMAP_ANIMATION_BOUNCE);
 		}
 		else {
 			alert('failed'+this.getStatus());
