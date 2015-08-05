@@ -7,13 +7,130 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-.section { text-align:center; color: #000; font: 50px "Microsoft Yahei"; }
-.section1 p {}
+.section { text-align:center; color: #fff; font: 3em "Microsoft Yahei"; }
+.section1 { }
 .section2 p { position: relative; left: -120%;}
 .section3 p { position: relative; bottom: -120%;}
 .section4 p { display:none;}
 .section5 p { position: relative; right: -120%;}
 .section6 p {position: relative;display: none;}
+
+.section1 p {
+    text-align:center;
+    color:#fff;
+  font-size:48px;
+   font-family: 'Fruktur', cursive;
+   text-shadow:   
+                   1px  1px 1px #ccc,
+                  0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #3EFF3E,
+                   0 0 70px #3EFFff,
+                   0 0 80px #3EFFff,
+                   0 0 100px #3EFFee,
+                   0 0 150px #3EFFee;
+           
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d; 
+  -ms-transform-style: preserve-3d;        
+  -o-transform-style: preserve-3d;         
+
+   
+        animation: run  ease-in-out 3s 1;
+   -moz-animation: run  ease-in-out 3s 1 ; 
+-webkit-animation: run  ease-in-out 3s 1;  
+-ms-animation: run  ease-in-out 3s 1;  
+
+     -o-animation: run  ease-in-out 3s 1;  
+}
+
+
+@keyframes run {
+      0% {
+        transform:rotateX(-5deg) rotateY(0);  
+      }
+    50% {
+        transform:rotateX(0) rotateY(180deg); 
+     text-shadow:  1px  1px 1px #ccc,
+                   0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #ff00de,
+                   0 0 70px #ff00de,
+                   0 0 80px #ff00de,
+                   0 0 100px #ff00de,
+                   0 0 150px #ff00de;
+
+                 
+      }
+      100% {
+        transform:rotateX(5deg) rotateY(360deg);  
+      }
+    }
+
+@-moz-keyframes run {
+      0% {
+        -moz-transform:rotateX(-5deg) rotateY(0); 
+
+      }
+    50% {
+        -moz-transform:rotateX(0) rotateY(180deg);  
+     text-shadow:  1px  1px 1px #ccc,
+                   0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #ff00de,
+                   0 0 70px #ff00de,
+                   0 0 80px #ff00de,
+                   0 0 100px #ff00de,
+                   0 0 150px #ff00de;
+
+                 
+      }
+      100% {
+        -moz-transform:rotateX(5deg) rotateY(360deg); 
+      }
+    }
+
+@-webkit-keyframes run {
+      0% {
+        -webkit-transform:rotateX(-5deg) rotateY(0);  
+
+      }
+    50% {
+        -webkit-transform:rotateX(0) rotateY(180deg); 
+     text-shadow:  1px  1px 1px #ccc,
+                   0 0 10px #fff,
+                   0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 40px #ff00de,
+                   0 0 70px #ff00de,
+                   0 0 80px #ff00de,
+                   0 0 100px #ff00de,
+                   0 0 150px #ff00de;
+
+                 
+      }
+      100% {
+        -webkit-transform:rotateX(5deg) rotateY(360deg);  
+      }
+    }
+@-ms-keyframes run {
+      0% {
+        -ms-transform:rotateX(-5deg) rotateY(0);  
+
+      }
+    50% {
+        -ms-transform:rotateX(0) rotateY(180deg); 
+    
+      }
+      100% {
+        -ms-transform:rotateX(5deg) rotateY(360deg);  
+      }
+    }
+
 
 </style>
 <script src="js/jquery-1.8.3.min.js"></script>
@@ -22,7 +139,7 @@
 <script>
 $(function(){
 	$('#dowebok').fullpage({
-		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90','red','blue'],
+		sectionsColor: ['#000', '#4BBFC3', '#7BAABE', '#f90','red','blue'],
 		afterLoad: function(anchorLink, index){
 			if(index == 2){
 				$('.section2').find('p').delay(250).animate({
@@ -81,6 +198,7 @@ $(function(){
 	<div class="section section1">
 		<h3>欢迎来到</h3>
 		<p>NJUPT--南邮地生院科协</p>
+		
 	</div>
 	<div class="section section2">
 		<h3>计算机部</h3>
@@ -100,7 +218,7 @@ $(function(){
 	</div>
 	<div class="section section6">
 		<h3>Learn More</h3>
-		<p><a href=""></a>信息发布中心</p>
+		<p><a href="">信息发布中心</a></p>
 		<p><a href="">报名链接</a></p>
 	</div>
 
