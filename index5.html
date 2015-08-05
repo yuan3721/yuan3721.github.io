@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-.section { text-align:center;  font: 50px "Microsoft Yahei"; }
+.section { text-align:center; color: #000; font: 50px "Microsoft Yahei"; }
 .section1 p {}
 .section2 p { position: relative; left: -120%;}
 .section3 p { position: relative; bottom: -120%;}
@@ -46,29 +46,29 @@ $(function(){
 				$('.section6').find('p').fadeIn(500);
 			}
 		},
-		onLeave: function(index, direction){
-			if(index == '2'){
-				$('.section2').find('p').delay(250).animate({
-					left: '-120%'
-				}, 500, 'easeOutExpo');
-			}
-			if(index == '3'){
-				$('.section3').find('p').delay(250).animate({
-					bottom: '-120%'
-				}, 500, 'easeOutExpo');
-			}
-			if(index == '4'){
-				$('.section4').find('p').fadeOut(500);
-			}
-			if (index=='5') {
-				$('.section5').find('p').delay(250).animate({
-					right:'-120%'
-				},500,'easeOutExpo');
-			}
-			if (index=='6') {
-				$('.section6').find('p').fadeIn(500);
-			}
-		},
+		// onLeave: function(index, direction){
+		// 	if(index == '2'){
+		// 		$('.section2').find('p').delay(250).animate({
+		// 			left: '-120%'
+		// 		}, 500, 'easeOutExpo');
+		// 	}
+		// 	if(index == '3'){
+		// 		$('.section3').find('p').delay(250).animate({
+		// 			bottom: '-120%'
+		// 		}, 500, 'easeOutExpo');
+		// 	}
+		// 	if(index == '4'){
+		// 		$('.section4').find('p').fadeOut(500);
+		// 	}
+		// 	if (index=='5') {
+		// 		$('.section5').find('p').delay(250).animate({
+		// 			right:'-120%'
+		// 		},500,'easeOutExpo');
+		// 	}
+		// 	if (index=='6') {
+		// 		$('.section6').find('p').fadeIn(500);
+		// 	}
+		// },
 		'navigation':true,
 	});
 });
@@ -80,27 +80,28 @@ $(function(){
 <div id="dowebok">
 	<div class="section section1">
 		<h3>欢迎来到</h3>
-		<p>南邮地生院科协</p>
+		<p>NJUPT--南邮地生院科协</p>
 	</div>
 	<div class="section section2">
-		<h3>第二屏</h3>
-		<p>滚动到第二屏后的回调函数执行的效果</p>
+		<h3>计算机部</h3>
+		<p>下设java组，硬件组，在这里，你可以学习到</p>
 	</div>
 	<div class="section section3">
-		<h3>第三屏</h3>
-		<p>滚动到第三屏后的回调函数执行的效果</p>
+		<h3>网络部</h3>
+		<p>下设前端，后台。从这里起步，搭建一个属于你自己的网站</p>
 	</div>
 	<div class="section section4">
-		<h3>第四屏</h3>
-		<p>滚动到第四屏后的回调函数执行的效果</p>
+		<h3>电子部</h3>
+		<p>新生部门，在这里与硬件交流</p>
 	</div>
 	<div class="section section5">
-		<h3>第五屏</h3>
-		<p>滚动到第5屏后的回调函数执行的效果</p>
+		<h3>办公室</h3>
+		<p>学习计算机基础的技巧，duang的一下，就成大神了。</p>
 	</div>
 	<div class="section section6">
-		<h3>第六屏</h3>
-		<p>滚动到第6屏后的回调函数执行的效果</p>
+		<h3>Learn More</h3>
+		<p><a href=""></a>信息发布中心</p>
+		<p><a href="">报名链接</a></p>
 	</div>
 
 </div>
