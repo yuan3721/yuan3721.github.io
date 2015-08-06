@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-.section h3{ text-align:center; color: red; font-size:4em;font-family: sans-serif;text-shadow:5px 5px 5px #ccc;}
+.section h3{ text-align:center; color:#000; font-size:4em;font-family: sans-serif;text-shadow:5px 5px 5px #ccc;}
 .section p {font-size: 1em;text-align: center; }
 .section2 p { position: relative; left: -120%;}
 .section3 p { position: relative; bottom: -120%;}
@@ -15,60 +15,13 @@
 .section5 p { position: relative; right: -120%;}
 .section6 p {position: relative;display: none;}
 
-.section1 {
-	background: url(images/keji.png);
-	-webkit-background-size: cover;
-	background-size: cover;
-	-o-background-size:cover;
-}
-
-/* ---*/
-
 .section1{
-	background:url(images/keji.png) 5px 5px,url(images/keji.png) 1050px 750px,url(images/keji.png) 1000px -50px;
-
-	-moz-animation-name:bgmove;
-	-moz-animation-duration:30s;
-	-moz-animation-timing-function:linear;
-	-moz-animation-delay:0;
-	-moz-animation-iteration-count:infinite;
-		
-	-webkit-animation-name:bgmove;
-	-webkit-animation-duration:30s;
-	-webkit-animation-timing-function:linear;
-	-webkit-animation-delay:0;
-	-webkit-animation-iteration-count:infinite;
-		
-	animation-name:bgmove;
-	animation-duration:30s;
-	animation-timing-function:linear;
-	animation-delay:0;
-	animation-iteration-count:infinite;
 }
-@-moz-keyframes bgmove{
-    0%{
-        background:url(images/keji.png) 5px 5px,url(images/keji.png) 1050px 750px,url(images/keji.png) 1000px -50px;
-    }
-    100%{
-        background:url(images/keji.png) 2005px 1005px,url(images/keji.png) 50px -250px,url(images/keji.png) 0 950px;
-
-    }
-}
-@-webkit-keyframes bgmove{
-    0%{
-        background:url(images/keji.png) 5px 5px,url(images/keji.png) 1050px 750px,url(images/keji.png) 1000px -50px;
-    }
-    100%{
-        background:url(images/keji.png) 2005px 1005px,url(images/keji.png) 50px -250px,url(images/keji.png) 0 950px;
-    }
-}
-/* --dabeijingyundong*/
-
-.section1 p {
+.section1 p{
   text-align:center;
   color:#fff;
   font-size:48px;
-  font-family: cursive;
+  font-family:cursive;
   text-shadow:   
                    1px  1px 1px #ccc,
                   0 0 10px #fff,
@@ -187,7 +140,7 @@
 <script>
 $(function(){
 	$('#dowebok').fullpage({
-		sectionsColor: ['#000', '#4BBFC3', '#7BAABE', '#f90','red','blue'],
+		sectionsColor: ['#eee', '#eee', '#eee', '#eee','#eee','#eee'],
 		afterLoad: function(anchorLink, index){
 			if(index == 2){
 				$('.section2').find('p').delay(250).animate({
@@ -221,25 +174,25 @@ $(function(){
 
 <div id="dowebok">
 	<div class="section section1">
-		<h3>欢迎加入</h3>
-		<p>NJUPT--南邮地生院科协</p>
+		<h3>WelCome to</h3>
+		<p> NJUPT--南邮地生院科协</p>
 
 	</div>
 	<div class="section section2">
 		<h3>计算机部</h3>
-		<p>下设java组，硬件组，在这里，你可以学习到</p>
+		<p>主要负责开展计算机软件方面的竞赛、技术培训以及项目和科研工作，目前主要有以下几个研究方向：Windows编程，acm算法，linux系统，游戏开发。同时拥有若干个项目组和专业研究小组。只要你是对有关于计算机各方面感兴趣的，无论你技术高低，都可以来加入，在这里，你总能找到一群有着相同兴趣爱好的人，他们就是你的良师益友。欢迎对计算机软件与网络等方向感兴趣的各位新生加入。</p>
 	</div>
 	<div class="section section3">
 		<h3>网络部</h3>
-		<p>下设前端，后台。从这里起步，搭建一个属于你自己的网站</p>
+		<p>网络部是一个热衷于web前后端开发、网络安全和多媒体制作的技术部门。我们不仅喜欢热门的web前端技术，我们还研究数据库 服务器 http协议 web脚本语言(python php ruby and Node.js)等方面的知识使用。我们喜欢渗透、逆向的快感，我们还做的了视频拍的了绚丽的mv。我们希望和志同道合的人在一起做喜欢的事情，期待你们的加入！</p>
 	</div>
 	<div class="section section4">
 		<h3>电子部</h3>
-		<p>新生部门，在这里与硬件交流</p>
+		<p>电子部由爱好硬件制作与应用的学生组成。主要职能是帮助广大学生熟悉单片机基本操作与原理并加以应用，提高学生对硬件的认识程度。主要研究电子电路，片上系统，数字电路，模拟电路等等相关的知识和技术。电子部日常培训采用平行组的形式，对部员统一进行电路焊接、程序设计等培训。成员通过平时的动手实践，更加地了解了自身的爱好，更好地发展了自身的兴趣。同时，电子部会定期布置一些有关硬件设计与制作的任务，促进学术氛围的形成。除此之外，电子部会为物理竞赛，大学生电子设计大赛等竞赛提供培训和硬件支持。电子部历届成员多次在全国大学生电子设计大赛等竞赛中获得一、二、三等奖的好成绩。欢迎各位有志于从事电子技术方面研究的青年加入</p>
 	</div>
 	<div class="section section5">
 		<h3>办公室</h3>
-		<p>学习计算机基础的技巧，duang的一下，就成大神了。</p>
+		<p>办公室作为主席团和校科协各个部门的沟通纽带，是校科协运作的保障部门，与其他部门都有着紧密的联系。办公室的工作主要包括 ：人员的组织与调配 、 活动的策划与总结 、 成员档案的归类与整理 、 文案的编辑与制作以及账务管理等 。在这里，你可以是掌握全局的策划者，可以是光彩照人的主持人，可以是默默辛勤的场务人员。在这里，你的沟通交流、活动组织策划能力可以得到提高。校科协办公室欢迎你的加入。</p>
 	</div>
 	<div class="section section6">
 		<h3>Learn More</h3>
