@@ -36,7 +36,7 @@ function addMarker(point){
 	}
 //自行车停放点 --begin
 var bikepoints=[
-118.914648 ,	32.120581,
+ 118.914648 ,	32.120581,
  118.922401 ,	32.100548,
  118.946664 ,	32.105733,
  118.910681 ,	32.120367,
@@ -84,20 +84,29 @@ for (var i = 0; i < 98; i+=2) {
 	}
 
 
-// var geolocation = new BMap.Geolocation();
-// 	geolocation.getCurrentPosition(function(r){
-// 		if(this.getStatus() == BMAP_STATUS_SUCCESS){
-// 			var myIcon = new BMap.Icon("http://developer.baidu.com/map/jsdemo/img/fox.gif", new BMap.Size(300,157));
-// 			var mk = new BMap.Marker(r.point,{icon:myIcon});
-// 			map.addOverlay(mk);
-// 			map.panTo(r.point);
-// 			mk.setAnimation(BMAP_ANIMATION_BOUNCE);
-// 		}
-// 		else {
-// 			alert('failed'+this.getStatus());
-// 		}        
-// 	},{enableHighAccuracy: true})
+var geolocation = new BMap.Geolocation();
+	geolocation.getCurrentPosition(function(r){
+		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+			var myIcon = new BMap.Icon("http://developer.baidu.com/map/jsdemo/img/fox.gif", new BMap.Size(300,157));
+			var mk = new BMap.Marker(r.point,{icon:myIcon});
+			map.addOverlay(mk);
+		    mpoint=r.point;
+			map.panTo(r.point);
+			mk.setAnimation(BMAP_ANIMATION_BOUNCE);
+		}
+		else {
+			alert('failed'+this.getStatus());
+		}        
+	},{enableHighAccuracy: true})
 
+
+map.addEventListener("click",function(e){
+		 // alert(e.point.lng + "," + e.point.lat);
+		var clickpoint=new BMap.Point(e.point.lng,e.point.lat);
+ 		var walking = new BMap.WalkingRoute(map, {renderOptions:{map: map, autoViewport: true}});
+ 		// walking.clearResults()
+		walking.search(mpoint,clickpoint);
+	});
 
 
 </script>  
