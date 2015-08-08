@@ -4,34 +4,19 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style type="text/css">
-	@media (max-width:960px){
-			body{
-				background: #eee;
-			}
-			#map{
-				display: none;
-			}
-			#title{
-				display: none;
-			}
-			h3{
-				display:inline-block;
-				text-align: center;
-			}
-
-	} 
-
-	@media(min-width: 960px){
-
-
+	*{
+		margin: 0;
+		padding: 0;
+	}
 		h3{
 			text-align: center;
 			display: none;
+			padding: 20px;
 		}
 		#title{
-			height: 100px;
 			width: 400px;
 			margin: 0px auto;
+			padding: 20px;
 		}
 
 		#title p{
@@ -46,8 +31,8 @@
 			height: 400px;
 			width: 400px;
 			margin: 0px auto;
-			position: relative;
-			background:   #C0D9D9 ;
+			position:relative;
+			background:#C0D9D9 ;
 
 		}
 		#map div{
@@ -56,7 +41,38 @@
 			border-radius: 100%;
 			position: absolute;
 		}
-	}
+		#buttons{
+			width: 300px;
+			height: 200px;
+			margin: 20px auto 0px;
+			position: relative;
+		}
+		#buttons button{
+			height: 30px;
+			width: 100px;
+			position: absolute;
+		}
+
+		#zuo{
+			top: 30px;
+			left: 0px;
+		}
+
+		#xia{
+			top: 30px;
+			left: 100px;
+		}
+
+		#you{
+			top: 30px;
+			left: 200px;
+		}
+		#shang{
+			top: 0px;
+			left: 100px;
+		}
+
+
 	</style>
 	<script type="text/javascript">
 	
@@ -183,13 +199,21 @@
 	</script>
 </head>
 <body>
-	<h3>抱歉：只支持键盘事件，不支持移动端</h3>
+
 	<div id="title">
-		<p id="eat"></p>
+		<p id="eat">得分:&nbsp;&nbsp;&nbsp;</p>
 		<h4 id="txt">加油</h4>
 	</div>
-	<div id="map">
-		
+
+	<div id="map">	
 	</div>
-		</body>
+
+	<div id="buttons">
+	<button id="zuo" onclick="snake.direct=37" > 左 </button>
+	<button id="shang" onclick="snake.direct=38"> 上</button>
+	<button id="you" onclick="snake.direct=39">右</button>
+	<button id="xia" onclick="snake.direct=40">下</button>
+	</div>
+
+</body>
 </html>
