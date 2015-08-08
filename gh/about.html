@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>广辉物流</title>
+	<link rel="stylesheet" href="css.css">
+	
+	<script type="text/javascript">
+	window.onload=function(){
+		var lDiv=document.getElementById('leftdiv');
+		var oDiv=lDiv.getElementsByTagName('li');
+		var mainDiv=document.getElementById('main');
+		var aDiv=mainDiv.getElementsByTagName('div');
+
+		for (var i = 0; i < oDiv.length; i++) {
+			oDiv[i].index=i;
+			oDiv[i].onclick=function(){
+				
+				for (var i = 0; i < oDiv.length; i++) {
+					oDiv[i].className="";
+					aDiv[i].style.display="none";
+				};
+				this.className="liactive";
+				aDiv[this.index].style.display="block";
+			}
+
+		};
+
+	}
+	</script>
+
+</head>
+<body> 
+	<div class="wrapper">
+    
+		<div class="top">
+			<a href="index.html"><img src="images/logo.png"></a>
+			<img  class="fuwu" src="images/call.jpg">
+			</span> 
+					</div>
+		<div class="banner">
+			<ul>
+				<li>
+					<a href="index.html">首页</a>  <span></span>
+				</li>
+				<li>
+					<a href="about.html"> 关于广辉</a> <span></span>
+
+				</li>
+				<li>
+					<a href="youshi.html">公司优势</a><span></span>
+
+				</li>
+				<li>
+					<a href="chanpin.html"> 产品服务</a><span></span>
+
+				</li>
+				<li>
+					<a href="zhaopin.html"> 人才招聘</a><span></span>
+
+				</li>
+				<li>
+					<a href="lianxi.html">联系我们</a>
+	
+				</li>
+
+			</ul>
+		</div>
+		<div class="showpic2">
+			<img src="images/1.jpg">
+		</div>
+		<div class="content">
+			<div class="left">
+				 
+      <div class="sbox"> 
+       <div class="topic">关于广辉</div> 
+       <div class="blank">
+       <ul id="leftdiv">
+       <li class="liactive" >
+       		企业概况
+       </li> 
+       <li>
+       		文化理念
+       </li> 
+        <li>
+	      	企业视频
+	    </li> 
+	    <li>
+	      	企业荣耀
+	    </li> 
+        </ul>
+        
+        
+       </div> 
+      </div> 
+      <div class="HeightTab clearfix"></div> 
+                
+           
+			</div>
+
+
+
+	<div class="right">
+			<div class="position">
+				<span class="home-icon"><img src="images/box_icon2.png"></span><span style="color:#000">  &nbsp;你的位置:  &nbsp;&nbsp;</span> <span style="color:#ccc">首页》关于广辉</span>
+			</div>
+			<div class="main" id="main">
+				<div class="qiyegaikuang" style="display:block">	
+				<p>
+					<span style="color:red">企业概括</span>:大连广辉物流服务有限公司于2003年月成立。在全国大中城市建立了1300多个合作网络网点，与国内外多家企业建立了长期的合作关系。如日本通世泰、伊藤忠、福特汽车、中金冶炼等公司。年运势量在10万吨以上。并且可为个性化的客户提供限时服务，在货物的运输过程中为每一辆加盟车辆配置了24小时的GPS监控系统，并设计了一套依据到达时间的奖惩机制。做到天天发车、准点发车、准点到达、保证低价、全程高速，安全、快速、送货及时。
+					</p>
+					<p>
+<span style="color:red">公司的愿景</span>:成为东北地区最专业的第三方物流
+					</p>
+					<p>
+<span style="color:red">公司价值观</span>:感恩、责任、创新
+
+				</p>　 
+				</div>	
+
+				<div>
+					 
+				</div>	
+
+				<div>
+					 
+				</div>
+
+				<div>
+					
+				</div>
+
+			</div>
+
+	</div>
+		</div>
+		<div class="foot">
+			 
+   		 <div class="inner"> 
+     <p>网站备案：xxxxxx<br></p> 
+     <p>大连甘井子区华北路427号  电话：xxxxx   邮编：xxxxxxx<br></p> 
+     <p>加盟合作请发送邮件至sunqinli@dlzhida.com  加盟热线：xxxxx<br></p> 
+     <p>Copyright(c)2015 大连广辉物流公司 ALL rights reserved.<br></p> 
+    	</div> 
+   
+		</div>
+
+	</div></body>
+</html>

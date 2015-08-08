@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <style type="text/css">
+	body{
+		background: #336699;
+
+	}
+    .slide{
+        padding: 175px;
+    }
+    q{
+        margin-top: 0px;
+    }
+    #nyimages{
+position: relative;
+    }
+    #qrp{
+        height: 200px;
+        width: 80px;
+        position: absolute;
+       margin-left: 1700px;
+       margin-top: -550px;
+       background: #ccc;
+      
+
+    }
+    #qrp1{
+        display: none;
+        margin-left: 1700px;
+        margin-top: -550px;
+    }
+    #hbhy{
+         height: 200px;
+        width: 80px;
+        position: absolute;
+       margin-left: 1700px;
+       margin-top: -500px;
+       background: #ccc;
+    }
+    #hbhy1{
+
+        display: none;
+        margin-left: 1700px;
+        margin-top: -550px;
+    }
+    </style>
+    <script type="text/javascript">
+    window.onload=function(){
+        var qingrenpo=document.getElementById('qrp');
+        var qingrenpo1=document.getElementById('qrp1');
+        qingrenpo.onmouseover=function(){
+            qingrenpo1.style.display="block"
+        }
+        qingrenpo.onmouseout=function(){
+            qingrenpo1.style.display="none";
+        }//情人坡
+        
+        var hbhy=document.getElementById('hbhy');
+        var hbhy1=document.getElementById('hbhy1');
+        hbhy.onmouseover=function(){
+            hbhy1.style.display="block"
+        }
+        hbhy.onmouseout=function(){
+            hbhy1.style.display="none";
+        }//湖边花园
+
+        var lt=document.getElementById('lt');
+        var lt1=document.getElementById('lt1');
+        lt.onmouseover=function(){
+            lt1.style.display="block"
+        }
+        lt.onmouseout=function(){
+            lt1.style.display="none";
+        }//凉亭
+
+        var pqgc=document.getElementById('pqgc');
+        var pqgc1=document.getElementById('pqgc1');
+        pqgc.onmouseover=function(){
+            pqgc1.style.display="block"
+        }
+        pqgc.onmouseout=function(){
+            pqgc1.style.display="none";
+        }//喷泉广场
+
+
+        var syl=document.getElementById('syl');
+        var syl1=document.getElementById('syl1');
+        syl.onmouseover=function(){
+            syl1.style.display="block"
+        }
+        syl.onmouseout=function(){
+            syl1.style.display="none";
+        }//实验楼
+
+
+        var tyg=document.getElementById('tyg');
+        var tyg1=document.getElementById('tyg1');
+        tyg.onmouseover=function(){
+            tyg1.style.display="block"
+        }
+        tyg.onmouseout=function(){
+            tyg1.style.display="none";
+        }//体育馆
+
+
+        var tjc=document.getElementById('tjc');
+        var tjc1=document.getElementById('tjc1');
+        tjc.onmouseover=function(){
+            tjc1.style.display="block"
+        }
+        tjc.onmouseout=function(){
+            tjc1.style.display="none";
+        }//田径场
+
+        var tsg=document.getElementById('tsg');
+        var tsg1=document.getElementById('tsg1');
+        tsg.onmouseover=function(){
+            tsg1.style.display="block"
+        }
+        tsg.onmouseout=function(){
+            tsg.style.display="none";
+        }//图书馆
+
+        var ysg=document.getElementById('ysg');
+        var ysg1=document.getElementById('ysg1');
+        ysg.onmouseover=function(){
+            ysg1.style.display="block"
+        }
+        ysg.onmouseout=function(){
+            ysg1.style.display="none";
+        }//艺术馆
+
+
+        var yyg=document.getElementById('yyg');
+        var yyg1=document.getElementById('yyg1');
+        yyg.onmouseover=function(){
+            yyg1.style.display="block"
+        }
+        yyg.onmouseout=function(){
+            yyg1.style.display="none";
+        }//游泳馆
+
+        var jxl=document.getElementById('jxl');
+        var jxl1=document.getElementById('jxl1')
+         jxl.onmouseover=function(){
+            jxl1.style.display="block"
+        }
+        jxl.onmouseout=function(){
+            jxl1.style.display="none";
+        }//jiaoxuelou
+
+        var jxl=document.getElementById('jxl');
+        var jxl1=document.getElementById('jxl1')
+         jxl.onmouseover=function(){
+            jxl1.style.display="block"
+        }
+        jxl.onmouseout=function(){
+            jxl1.style.display="none";
+        }//sushe
+
+        var st=document.getElementById('st');
+        var st1=document.getElementById('st1')
+         st.onmouseover=function(){
+            st1.style.display="block"
+        }
+        st.onmouseout=function(){
+            st1.style.display="none";
+        }//shitang
+
+
+
+    }
+    </script>
+</head>
+
+
+<body class="impress-not-supported">
+
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+<div id="impress">
+
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+   	 <q style="text-align:center;font-family:微软雅黑 ;margin-top: 0px">南京邮电大学</q>
+        <q style="text-align:center;margin-top: 0px">虚拟土地规划大赛</q>
+        <q style="text-align:center;font-size:36px;">成员：李利森 袁俊文 刘颖   </q>
+        
+
+    </div>
+
+    <div class="step slide" data-x="-1000" data-y="0">
+        <q style="margin-top: 0px">南邮地理特点:</q>
+        <p style="line-height:1.8em;">1.南北跨度较大<br>
+        	2.东西距离较窄<br>
+        	3.闲置荒地较多
+        </p>
+
+    </div>
+
+    <div class="step slide" data-x="0" data-y="0">
+        <q style="margin-top: 0px">地形导致的问题：</q>
+        <p style="line-height:1.8em;">1.上课要走很长的路程<br>2.自行车较多,交通拥堵<br>3.机动车与非机动车未分车道，容易造成事故
+        </p>
+        
+    </div>
+
+     <div class="step  slide" data-x="-1000" data-y="1500" data-rotate="90"  style="padding:50px;">
+        <p style="">我们的创意来源：计算机主板</p>
+
+        <img  style="height:400px;width:300px;margin:20px;border:2px solid #058"src="images/zb.jpg">
+        <img  style="height:400px;width:300px;margin:20px;border:2px solid #058"src="images/td.jpg">
+    </div>
+    
+	
+        
+   
+    <div id="nyimages">       
+     <img  style="top:1;left:20;opacity:1;margin-left:780px;" src="南邮修正2.jpg">
+     <div id="qrp"></div>
+     <img id="qrp1"src="images/情人坡.jpg">
+     <div id="hbhy"></div>
+     <images id="hbhy" src="images/湖边花园.jpg">
+     
+
+    </div>
+
+    <div  class=" step" data-x="1550" data-y="400" data-scale="1" >
+    </div> 
+
+    <div class=" step" data-x="1550" data-y="1000">
+          
+    </div>
+
+    <div class=" step" data-x="1550" data-y="1500">
+          
+    </div>
+
+
+    <div class=" step" data-x="1550" data-y="2000">
+          
+    </div>
+  
+   <div id="its" class="step " data-x="850" data-y="2500" data-rotate="90" data-scale="5">
+     <p style="font-size:0.5em;color:#fff" >我们的特点：<br>1.图书馆和教学楼建在<strong>中部地区</strong>，宿舍建在离教学楼和图书馆不远的<br>两侧，大大缩短了学生去上课所要走的路程，同时对自行车的需求会<br>大大减少，大程度的减少学生自行车的失窃率，
+     <br>2.<strong>规定机动车行驶的路线</strong>仅为校园西边马路和北门进来到教学楼前，<br>这样机动车道与学生日常经过的道路重合的部分极少，能起到减少交<br>通事故发生的概率<br>3.
+     新增游泳馆，实验楼，研究生楼，通信楼，计算机科学与技术大楼，<br>社会科学研究楼，电子楼，艺术馆，大礼堂等建筑，基于南邮学科特<br>色并更加完善了南邮的职能教学完备性</p>
+ 
+ </div> 
+
+    
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+
+<!-- <div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div> -->
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+
+</body>
+</html>
+
+
