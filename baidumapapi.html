@@ -29,59 +29,99 @@ map.addControl(new BMap.NavigationControl());   //缩放
 map.addControl(new BMap.ScaleControl());    //比例尺
 map.addControl(new BMap.OverviewMapControl());    //大图概览
 //map.addControl(new BMap.MapTypeControl());     //地图显示形态 2维 卫星图
-function addMarker(point){
-	  var marker = new BMap.Marker(point);
-	  map.addOverlay(marker);
-	}
 //自行车停放点 --begin
 var bikepoints=[
- 118.914648 ,	32.120581,
- 118.922401 ,	32.100548,
- 118.946664 ,	32.105733,
- 118.910681 ,	32.120367,
- 118.921747 ,	32.115649,
- 118.933787 ,	32.109915,
- 118.937701 ,	32.130748,
- 118.931509 ,	32.12883, 
- 118.949216 ,	32.130901,
- 118.966217 ,	32.115542,
- 118.937403 ,	32.112622,
- 118.941395 ,	32.125504,
- 118.918842 ,	32.105496,
- 118.96677	,	32.114801,
- 118.927722 ,	32.108264,
- 118.927466 ,	32.12821,
- 118.936241 ,	32.101206,
- 118.941414 ,	32.129563,
- 118.938594 ,	32.13029,
- 118.941748 ,	32.122538,
- 118.936047 ,	32.104639,
- 118.933238 ,	32.097642,
- 118.928546 ,	32.130779,
- 118.914284 ,	32.104241,
- 118.917124 ,	32.096832,
- 118.924369 ,	32.102055,
- 118.926334 ,	32.095868,
- 118.911923 ,	32.103507,
- 118.901347 ,	32.105404,
- 118.943624 ,	32.102873,
- 118.914616 ,	32.10259, 
- 118.934678 ,	32.100334,
- 118.918546 ,	32.102108,
- 118.988277 ,	32.137659,
- 118.927824 ,	32.108302,
- 118.924062 ,	32.098285,
- 118.925735 ,	32.104953,
- 118.945655 ,	32.109586,
- 118.961744 ,	32.117836];
+[118.914648 ,	32.120581,"剩余车辆数目:13"],
+[ 118.922401 ,	32.100548,"剩余车辆数目:21"],
+[ 118.946664 ,	32.105733,"剩余车辆数目:14"],
+[ 118.910681 ,	32.120367,"剩余车辆数目:18"],
+[ 118.921747 ,	32.115649,"剩余车辆数目:15"],
+[ 118.933787 ,	32.109915,"剩余车辆数目:14"],
+[ 118.937701 ,	32.130748,"剩余车辆数目:4"],
+[ 118.931509 ,	32.12883, "剩余车辆数目:23"],
+[ 118.949216 ,	32.130901,"剩余车辆数目:12"],
+[ 118.966217 ,	32.115542,"剩余车辆数目:4"],
+[ 118.937403 ,	32.112622,"剩余车辆数目:5"],
+[ 118.941395 ,	32.125504,"剩余车辆数目:17"],
+[ 118.918842 ,	32.105496,"剩余车辆数目:19"],
+[ 118.96677	,	32.114801,"剩余车辆数目:16"],
+[ 118.927722 ,	32.108264,"剩余车辆数目:12"],
+[ 118.927466 ,	32.12821,"剩余车辆数目:13"],
+[ 118.936241 ,	32.101206,"剩余车辆数目:12"],
+[ 118.941414 ,	32.129563,"剩余车辆数目:14"],
+[ 118.938594 ,	32.13029,"剩余车辆数目:12"],
+[ 118.941748 ,	32.122538,"剩余车辆数目:12"],
+[ 118.936047 ,	32.104639,"剩余车辆数目:15"],
+[ 118.933238 ,	32.097642,"剩余车辆数目:12"],
+[ 118.928546 ,	32.130779,"剩余车辆数目:13"],
+[ 118.914284 ,	32.104241,"剩余车辆数目:12"],
+[ 118.917124 ,	32.096832,"剩余车辆数目:12"],
+[ 118.924369 ,	32.102055,"剩余车辆数目:14"],
+[ 118.926334 ,	32.095868,"剩余车辆数目:12"],
+[ 118.911923 ,	32.103507,"剩余车辆数目:12"],
+[ 118.901347 ,	32.105404,"剩余车辆数目:17"],
+[ 118.943624 ,	32.102873,"剩余车辆数目:16"],
+[ 118.914616 ,	32.10259, "剩余车辆数目:12"],
+[ 118.934678 ,	32.100334,"剩余车辆数目:11"],
+[ 118.918546 ,	32.102108,"剩余车辆数目:12"],
+[ 118.988277 ,	32.137659,"剩余车辆数目:10"],
+[ 118.927824 ,	32.108302,"剩余车辆数目:8"],
+[ 118.924062 ,	32.098285,"剩余车辆数目:7"],
+[ 118.925735 ,	32.104953,"剩余车辆数目:9"],
+[ 118.945655 ,	32.109586,"剩余车辆数目:1"],
+[ 118.961744 ,	32.117836,"剩余车辆数目:12"],
+ ];
 
 //自行车停放点 --end
 
-for (var i = 0; i < 98; i+=2) {
-		var point = new BMap.Point(bikepoints[i], bikepoints[i+1]);
-		addMarker(point);
+var opts = {
+	  width : 100,     // 信息窗口宽度
+	  height: 80,     // 信息窗口高度
+	  title : "信息窗口" , // 信息窗口标题
+	  enableMessage:true//设置允许信息窗发送短息
 	}
 
+
+
+for(var i=0;i<bikepoints.length;i++){
+		var marker = new BMap.Marker(new BMap.Point(bikepoints[i][0],bikepoints[i][1]));  // 创建标注
+		var content = bikepoints[i][2];
+		map.addOverlay(marker);               // 将标注添加到地图中
+		addClickHandler(content,marker);
+	}
+
+function addClickHandler(content,marker){
+		marker.addEventListener("click",function(e){
+			openInfo(content,e)}
+		);
+	}
+	function openInfo(content,e){
+		var p = e.target;
+		var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+		var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象 
+		map.openInfoWindow(infoWindow,point); //开启信息窗口
+	}
+// function addMarker(point){
+// 	  var marker = new BMap.Marker(point);
+// 	  map.addOverlay(marker);
+// 	}
+
+// by_points=[];
+// by_markers=[];
+// for (var i = 0; i < 98; i+=2) {
+// 		by_points[i] = new BMap.Point(bikepoints[i], bikepoints[i+1]);
+// 		by_markers[i]=new BMap.Marker(by_points[i]);
+// 		map.addOverlay(by_markers[i]);
+// 	}
+
+
+// 	var infoWindow = new BMap.InfoWindow("地址：北京市东城区王府井大街88号乐天银泰百货八层", opts);  // 创建信息窗口对象 
+// for (var i = 0; i < by_markers.length; i+=2) {
+// 		by_markers[i].addEventListener("click", function(){          
+// 		map.openInfoWindow(infoWindow,by_points[i]); //开启信息窗口
+// 	})
+// 	}
+//	;
 
 var geolocation = new BMap.Geolocation();
 	geolocation.getCurrentPosition(function(r){
@@ -103,13 +143,13 @@ var geolocation = new BMap.Geolocation();
 	},{enableHighAccuracy: true})
 
 
-map.addEventListener("click",function(e){
-		 // alert(e.point.lng + "," + e.point.lat);
-		var clickpoint=new BMap.Point(e.point.lng,e.point.lat);
- 		var walking = new BMap.WalkingRoute(map, {renderOptions:{map: map, autoViewport: true}});
- 		// walking.clearResults()
-		walking.search(mpoint,clickpoint);
-	});
+// map.addEventListener("click",function(e){
+// 		 // alert(e.point.lng + "," + e.point.lat);
+// 		var clickpoint=new BMap.Point(e.point.lng,e.point.lat);
+//  		var walking = new BMap.WalkingRoute(map, {renderOptions:{map: map, autoViewport: true}});
+//  		// walking.clearResults()
+// 		walking.search(mpoint,clickpoint);
+// 	});
 
 
 </script>  
