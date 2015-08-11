@@ -10,8 +10,7 @@ body{height:100%;margin:0px;padding:0px}
 #allmap{height:100%}  
 </style>  
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=EDb6761c5b033eaa0cd169651f54c3d2">
-//v1.5版本的引用方式：src="http://api.map.baidu.com/api?v=1.5&ak=您的密钥"
-//v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=您的密钥&callback=initialize"
+//api引用
 </script>
 </head>  
  
@@ -89,6 +88,10 @@ var geolocation = new BMap.Geolocation();
 		if(this.getStatus() == BMAP_STATUS_SUCCESS){
 			var myIcon = new BMap.Icon("http://developer.baidu.com/map/jsdemo/img/fox.gif", new BMap.Size(300,157));
 			var mk = new BMap.Marker(r.point,{icon:myIcon});
+
+			var circle = new BMap.Circle(r.point,1000,{fillColor:"blue", strokeWeight:1 ,fillOpacity: 0.3, strokeOpacity: 0.3});
+    map.addOverlay(circle);
+    
 			map.addOverlay(mk);
 		    mpoint=r.point;
 			map.panTo(r.point);
