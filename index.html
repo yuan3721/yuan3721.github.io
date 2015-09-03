@@ -1,24 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<style>
-	</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+    body{
+    	background: rgba(208,208,104,0.1);
+    }
+    h1 {
+        text-align: center;
+        line-height: 100px;
+        border-bottom: 1px dashed blue;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 10px auto;
+        padding: 20px;
+        border: 1px solid yellow;
+        border-radius: 30px;
+           }
+    .container img{
+    	height: 200px;
+    	float: left;
+    	border-radius: 50%;
+    	margin: 10px;
+    }
+
+    .container>p{
+    	float: left;
+    	font-size: 20px;
+    	line-height: 40px;
+    	padding-left: 15px;
+    	margin: 10px;
+    }
+    .container a {
+        position: relative;
+        float: left;
+        height: 50px;
+        margin: 10px;
+        padding: 5px;
+        border-top: #eee;
+        border: 2px solid #c3ecee;
+        text-decoration: none;
+        background: rgb(190,232,231);
+        border-radius: 10px;
+    }
+    
+    .container a .icon {
+        height: 40px;
+        width: 40px;
+        margin: 2px auto;
+        border: 2px solid rgb(136,90,164);
+        float: left;
+
+    }
+    
+   .container a .icon+p {
+		padding-left: 5px;
+		line-height: 50px;
+        text-align: center;
+        display: block;
+        float: left;
+        color: rgba(249,99,111,1);
+
+    }
+    </style>
 </head>
+
 <body>
-	<h1> Hello World!</h1>
-	<a href="baidumapapi.html">百度地图</a>
-	<a href="index6.html">科协</a>
-	<a href="index5.html">科协2</a>
-	<a href="index9.html">科协3</a>
-	<a href="tanchishe.html">贪吃蛇</a>
-	<a href="./cashdairy/index.html">记账本</a>
-	<a href="./projectshow/index.html">虚拟土地规划大赛</a>
-	<a href="./gh/index.html">广辉物流</a>
-	<a href="./time/index.html">time</a>
-	<a href="./button/index.html">button</a>
+    <h1> Hello World!</h1> 
+
+    	<div class="container">
+		<h3>我的墓志铭:</h3>
+
+    		<img src="lszj.jpg" alt="猴王袁俊文">
+       		<p>大家好，我叫袁俊文，万万没想到，我会出现在地球。<br>
+       		小学六流，初中九流，高中一流，大学三流。<br>
+       		智商不高，但还算努力。记性不好，但还算不懒。<br>
+       		喜欢折腾，啥都会一点，啥都不太懂.<br>
+       		理科稍强，文科弱项，画画幼稚园水平，外星人审美观。<br>
+       		</p>
+       		<div style="clear:both"></div>
+
+       	</div>  	
+   	    <div class="container">
+    	<h3>我的小作坊:</h3>
+        <a href="baidumapapi.html">
+            <div class="icon"></div>
+            <p>百度地图</p>
+        </a>
+        <a href="./kexie/index3.html">
+            <div class="icon"></div>
+            <p>科协1</p>
+        </a>
+        <a href="./kexie/index2.html">
+            <div class="icon"></div>
+            <p>科协2</p>
+        </a>
+        <a href="./kexie/index.html">
+            <div class="icon"></div>
+            <p>科协3</p>
+        </a>
+        <a href="tanchishe.html">
+            <div class="icon"></div>
+            <p>贪吃蛇</p>
+        </a>
+        <a href="./cashdairy/index.html">
+            <div class="icon"></div>
+            <p>记账本</p>
+        </a>
+        <a href="./projectshow/index.html">
+            <div class="icon"></div>
+            <p>虚拟土地规划展示</p>
+        </a>
+        <a href="./gh/index.html">
+            <div class="icon"></div>
+            <p>广辉物流</p>
+        </a>
+        <a href="./time/index.html">
+            <div class="icon"></div>
+            <p>time</p>
+        </a>
+        <a href="./button/index.html">
+            <div class="icon"></div>
+            <p>button</p>
+        </a>
+
+        <div style="clear:both"></div>
+    </div>
 </body>
+
 </html>
