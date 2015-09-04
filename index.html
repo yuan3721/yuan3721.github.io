@@ -10,22 +10,35 @@
 		padding: 0px;
 		margin: 0px;
 	}
+
+     @font-face{
+    font-family: "MOOC Font";
+    src: url("./Amaranth-BoldItalic.otf");
+}
     body{
     	background: rgba(208,208,104,0.1);
     }
+    *{
+        font-family: "";
+        }  
+
     h1 {
         text-align: center;
         line-height: 100px;
         border-bottom: 1px dashed blue;
+        font-family: "MOOC Font";
     }
     
     .container {
         width: 80%;
         margin: 10px auto;
         padding: 20px;
-        border: 1px solid yellow;
+        border-bottom: 2px dashed yellow;
         border-radius: 30px;
            }
+    .container h3{
+        font-family: "微软雅黑";
+         }
     .container img{
     	height: 200px;
     	float: left;
@@ -39,7 +52,8 @@
     	line-height: 40px;
     	padding-left: 15px;
     	margin: 10px;
-    }
+        font-family: "微软雅黑";
+        }
     .container a {
         position: relative;
         float: left;
@@ -73,7 +87,31 @@
     }
     </style>
 </head>
+<script>
+	window.onload=function(){
+		var str="大家好，我叫袁俊文，万万没想到，我会出现在地球。b小学六流，初中九流，高中一流，大学三流。b智商不高，但还算努力。记性不好，但还算不懒。b喜欢折腾，啥都会一点，啥都不太懂。理科稍强，文科弱项，画画幼稚园水平，外星人审美观。。。e"
+		var intro=document.getElementById('intro');
+        //alert(str[3])
+		var i=0;
+       // var spanl="<span> _ </span>"
+			timer=setInterval(function(){
+				if(str[i]=="b")
+				{
+					intro.innerHTML+='<br>';
+                    i++;
+				}
+				else if(str[i]=="e"){
+						clearInterval(timer);	
+                        		}
+                else{
+                    intro.innerHTML+=str[i];   
+                    i++;
+                }
 
+			},100)
+		
+			}
+</script>
 <body>
     <h1> Hello World!</h1> 
 
@@ -81,14 +119,10 @@
 		<h3>我的墓志铭:</h3>
 
     		<img src="lszj.jpg" alt="猴王袁俊文">
-       		<p>大家好，我叫袁俊文，万万没想到，我会出现在地球。<br>
-       		小学六流，初中九流，高中一流，大学三流。<br>
-       		智商不高，但还算努力。记性不好，但还算不懒。<br>
-       		喜欢折腾，啥都会一点，啥都不太懂.<br>
-       		理科稍强，文科弱项，画画幼稚园水平，外星人审美观。<br>
+       		<p id="intro">
        		</p>
-       		<div style="clear:both"></div>
-
+            <div style="clear:both"></div>
+        
        	</div>  	
    	    <div class="container">
     	<h3>我的小作坊:</h3>
@@ -135,6 +169,13 @@
 
         <div style="clear:both"></div>
     </div>
+
+    <div class="container"> 
+            <h3>我的简介</h3>
+            <p> 学渣一枚，英语六级已过，全国计算机三级已过，没挂科，绩点也不高。</p>
+         <div style="clear:both"></div>
+    </div>
+
 </body>
 
 </html>
