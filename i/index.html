@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>你好,陌生人</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+
+     @font-face{
+    font-family: "MOOC Font";
+    src: url("./Amaranth-BoldItalic.otf");
+}
+    body{
+    	background: rgba(208,208,104,0.1);
+    }
+    *{
+        font-family: "";
+        }  
+
+    h1 {
+        text-align: center;
+        line-height: 100px;
+        border-bottom: 1px dashed blue;
+        font-family: "MOOC Font";
+    }
+    
+    .container {
+        width: 80%;
+        margin: 10px auto;
+        padding: 20px;
+        border-bottom: 2px dashed yellow;
+        border-radius: 30px;
+           }
+    .container h3{
+        font-family: "微软雅黑";
+         }
+    .container img{
+    	height: 200px;
+    	float: left;
+    	border-radius: 50%;
+    	margin: 10px;
+    }
+
+    .container>p{
+    	float: left;
+    	font-size: 20px;
+    	line-height: 40px;
+    	padding-left: 15px;
+    	margin: 10px;
+        font-family: "微软雅黑";
+        max-width: 780px;
+        }
+    .container a {
+        position: relative;
+        float: left;
+        height: 50px;
+        margin: 10px;
+        padding: 5px;
+        border-top: #eee;
+        border: 2px solid #c3ecee;
+        text-decoration: none;
+        background: rgb(190,232,231);
+        border-radius: 10px;
+    }
+    
+    .container a .icon {
+        height: 40px;
+        width: 40px;
+        margin: 2px auto;
+        border: 2px solid rgb(136,90,164);
+        float: left;
+
+    }
+    
+   .container a .icon+p {
+		padding-left: 5px;
+		line-height: 50px;
+        text-align: center;
+        display: block;
+        float: left;
+        color: rgba(249,99,111,1);
+
+    }
+    </style>
+</head>
+<script>
+	window.onload=function(){
+		var str="大家好，我叫袁俊文，万万没想到，我会出现在地球。b小学六流，初中九流，高中一流，大学三流。b智商不高，但还算努力。记性不好，但还算不懒。b喜欢折腾，啥都会一点，啥都不太懂。理科稍强，文科弱项，画画幼稚园水平，外星人审美观。。。e"
+		var intro=document.getElementById('intro');
+        //alert(str[3])
+		var i=0;
+       // var spanl="<span> _ </span>"
+			timer=setInterval(function(){
+				if(str[i]=="b")
+				{
+					intro.innerHTML+='<br>';
+                    i++;
+				}
+				else if(str[i]=="e"){
+						clearInterval(timer);	
+                        		}
+                else{
+                    intro.innerHTML+=str[i];   
+                    i++;
+                }
+
+			},100)
+		
+			}
+</script>
+<body>
+    <h1> Hello World!</h1> 
+
+    	<div class="container">
+		<h3>我的墓志铭:</h3>
+
+    		<img src="lszj.jpg" alt="猴王袁俊文">
+       		<p id="intro">
+       		</p>
+            <div style="clear:both"></div>
+        
+       	</div>  	
+   	    <div class="container">
+    	<h3>我的小作坊:</h3>
+        <a target="_blank" href="baidumapapi.html">
+            <div class="icon"></div>
+            <p>百度地图</p>
+        </a>
+         <a target="_blank" href="./kexie/index.html">
+            <div class="icon"></div>
+            <p>科协1</p>
+        </a>
+        <a target="_blank" href="./kexie/index2.html">
+            <div class="icon"></div>
+            <p>科协2</p>
+        </a>
+        <a target="_blank" href="tanchishe.html">
+            <div class="icon"></div>
+            <p>贪吃蛇</p>
+        </a>
+        <a target="_blank" href="./cashdairy/index.html">
+            <div class="icon"></div>
+            <p>记账本</p>
+        </a>
+        <a target="_blank" href="./projectshow/index.html">
+            <div class="icon"></div>
+            <p>虚拟土地规划展示</p>
+        </a>
+        <a target="_blank" href="./gh/index.html">
+            <div class="icon"></div>
+            <p>广辉物流</p>
+        </a>
+        <a target="_blank" href="./time/index.html">
+            <div class="icon"></div>
+            <p>time</p>
+        </a>
+        <a target="_blank" href="./button/index.html">
+            <div class="icon"></div>
+            <p>button</p>
+        </a>
+
+        <div style="clear:both"></div>
+    </div>
+
+    <div class="container"> 
+            <h3>我的简介</h3>
+            <br>
+            <div> 学渣一枚，英语六级已过，全国计算机三级已过，暂时没挂过科，绩点也不高(2.4+)。曾在途牛旅游网实习,现在美团点评网实习。专注前端开发1年有余,偶尔捣鼓php,node,linux 和安全知识,较为深入的了解过 JavaScript, http协议, 有志于从事前端开发,并向全栈发展,并希望学习更多的安全知识;知道自己算法渣,正在努力提升中,加油!</div>
+            <br>
+            <h4>Email:yjw6174@gmail.com</h4>
+
+         <div style="clear:both"></div>
+    </div>
+
+</body>
+
+</html>
