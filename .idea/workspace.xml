@@ -2,97 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce0c336e-5c99-40b0-a193-7b0f2f0725f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Amaranth-BoldItalic.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/baidumapapi.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/button/css/css.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/button/images/allow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/button/images/mission.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/button/images/play.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/button/images/touch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/button/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/button/js/jquery-1.11.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cashdairy/css/jquery.mobile-1.4.5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cashdairy/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cashdairy/js/cashdairy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cashdairy/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cashdairy/js/jquery.mobile-1.4.5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/jquery.fullPage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/chanpin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/css.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/1s.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/box_bg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/box_icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/call.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/nav_bg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/page-header.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/round1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/round2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/round3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/images/top_tel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/lianxi.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/show.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/youshi.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gh/zhaopin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery-1.8.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.fullPage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.fullPage.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/css/jquery.fullPage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/dmj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/index2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/js/jquery-1.8.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/js/jquery.fullPage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/js/jquery.fullPage.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/mxy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/sourcefile/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/sourcefile/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/sourcefile/carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/sourcefile/holder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/sourcefile/ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/sourcefile/ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/sourcefile/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/szh.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/xhb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/xjw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kexie/zzx.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lszj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectshow/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectshow/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectshow/component.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectshow/css/impress-demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectshow/favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectshow/images/sh.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectshow/images/td.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectshow/images/zb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectshow/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectshow/index3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectshow/js/impress.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projectshow/td.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tanchishe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/time/digit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/time/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unconnect/Sublime Text" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/打字机.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/自动填写教学质量评价表（优化版V2.1）.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YJW6174.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,8 +37,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.033898305">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.06779661">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -516,8 +427,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.033898305">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.06779661">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
           <folding />
         </state>
       </provider>
