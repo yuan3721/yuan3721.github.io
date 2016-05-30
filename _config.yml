@@ -9,12 +9,10 @@
 title: YuanJunwen's Home
 email: yjw6174@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Always bear in mind that your own resolution to success is ...
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
+url: "http://yuanjunwen.com" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
 github_username:  yjw6174
 
 # Build settings
