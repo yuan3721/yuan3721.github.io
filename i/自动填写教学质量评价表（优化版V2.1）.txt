@@ -1,14 +1,16 @@
+
 自动填写教学质量评价脚本(优化版，不需要手动点击保存);
 
 1.打开教学质量评价填写页面  202.119.225.34
 2.打来浏览器 控制台，复制下面代码，然后回车，然后复制，回车，复制回车。。。
 
-var document2=document.getElementById('iframeautoheight').contentWindow.document;
-for (var j=2;j<12;j++){
-	var select=document2.getElementById('DataGrid1__ctl'+j+'_JS1');
-	var options=select.getElementsByTagName('option');
-	var index=Math.floor(Math.random()*2+1);
-	options[index].selected=true;
+var document2 = document.getElementById('iframeautoheight').contentWindow.document;
+var n = 12;
+for (var j=2;j<n;j++){
+	var select = document2.getElementById('DataGrid1__ctl'+j+'_JS1');
+	var options = select.getElementsByTagName('option');
+	var index = Math.floor(Math.random()*2+1);
+	options[index].selected = true;
 }
 document2.getElementById("Button1").click();
 
