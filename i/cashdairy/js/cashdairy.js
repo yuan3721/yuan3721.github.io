@@ -11,17 +11,21 @@
     var allin = 0;
     var allout = 0;
     var bill = [];//[{id:1,money:money,reason:reason},{}]
-    var htmltxt = '<a href="#">' + '【 ' + '<%= time %>' +'】' + '<%= reason %>' +'  ' + '<span >' + '￥:' + '<%= money %>' +'</span>' + '</a>';
+    var htmltxt = '<a href="#">' + '【 ' + '<%= time %>' + '】' + '<%= reason %>' + '  ' + '<span >' + '￥:' + '<%= money %>' + '</span>' + '</a>';
 
 
     bOutcome.onclick = function () {
+        var money = $('#money').val();
+        var reason = $('#reason').val();
         addRecord(money, reason, '-');
     };
     bIncome.onclick = function () {
+        var money = $('#money').val();
+        var reason = $('#reason').val();
         addRecord(money, reason);
     };
     $("#showList").click(function () {
-        oOl.remove();
+        $(oOl).children().remove();
         for (let i = 0; i < bill.length; i++) {
             if (bill[i].money < 0) {
                 allout += bill[i].money
@@ -46,7 +50,6 @@
             bill.push({id: id++, money: money, reason: reason || '无', time: time})
         }
     }
-
 
 
     var common = {
