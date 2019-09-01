@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>广辉物流</title>
+	<link rel="stylesheet" href="css.css">
+	
+	<script type="text/javascript">
+	window.onload=function(){
+		var lDiv=document.getElementById('leftdiv');
+		var oDiv=lDiv.getElementsByTagName('li');
+		var mainDiv=document.getElementById('main');
+		var aDiv=mainDiv.getElementsByTagName('div');
+
+		for (var i = 0; i < oDiv.length; i++) {
+			oDiv[i].index=i;
+			oDiv[i].onclick=function(){
+				
+				for (var i = 0; i < oDiv.length; i++) {
+					oDiv[i].className="";
+					aDiv[i].style.display="none";
+				};
+				this.className="liactive";
+				aDiv[this.index].style.display="block";
+			}
+
+		};
+
+	}
+	</script>
+
+</head>
+<body> 
+	<div class="wrapper">
+    
+		<div class="top">
+			<a href="index.html"><img src="images/logo.png"></a>
+			<img  class="fuwu" src="images/call.jpg">
+			</span> 
+					</div>
+		<div class="banner">
+			<ul>
+				<li>
+					<a href="index.html">首页</a>  <span></span>
+				</li>
+				<li>
+					<a href="about.html"> 关于广辉</a> <span></span>
+
+				</li>
+				<li>
+					<a href="youshi.html">公司优势</a><span></span>
+
+				</li>
+				<li>
+					<a href="chanpin.html"> 产品服务</a><span></span>
+
+				</li>
+				<li>
+					<a href="zhaopin.html"> 人才招聘</a><span></span>
+
+				</li>
+				<li>
+					<a href="lianxi.html">联系我们</a>
+	
+				</li>
+
+			</ul>
+		</div>
+		<div class="showpic2">
+			<img src="images/1.jpg">
+		</div>
+		<div class="content">
+			<div class="left">
+				 
+      <div class="sbox"> 
+       <div class="topic">产品服务</div> 
+       <div class="blank">
+       <ul id="leftdiv">
+       <li class="liactive" >
+       		推荐服务
+       </li> 
+<!--
+       <li>
+       		推荐服务
+       </li> 
+        <li>
+	      	企业视频
+	    </li> 
+	    <li>
+	      	企业荣耀
+	    </li> 
+-->
+        </ul>
+        
+        
+       </div> 
+      </div> 
+      <div class="HeightTab clearfix"></div> 
+                
+           
+			</div>
+
+
+
+	<div class="right">
+			<div class="position">
+				<span class="home-icon"><img src="images/box_icon2.png"></span><span style="color:#000">  &nbsp;你的位置:  &nbsp;&nbsp;</span> <span style="color:#ccc">首页》产品服务</span>
+			</div>
+			<div class="main" id="main">
+				<div class="qiyegaikuang" style="display:block">	
+				<p>
+2015年公司利用全国网点优势针对20KG-1000KG中小货物在大连，推出全国免送货费，单价低于同类型物流公司。打造大连最低价格，服务最好的公司<br/>
+目前市场上现在零担运输存在三个运输环节<br/> 
+即   小车提货费  + 运输费+ 目的地派送费<br/>
+举例：大连到北京顺义区100KG货物  <br/>
+提货费100元  +  长途运输费用100元   +北京派送费用200元  合计费用400元 其中派送费占比50%
+广辉物流费总共用仅为200元<br/>
+以上可以看出派送费用在整个零担运输中占比非常大，那么我们公司在其费用全额免除。<br/>
+我们如何做到免除派送费用。我们在全国1300多个网点实行联盟制，所谓联盟制是大连广辉作为大连的支点，相应的北京发货到大连货物我们也免费送货，我们这1300多个网点以这种合作机制实行了将运输费用大大折扣，大幅增加了公司竞争力。<br/>
+在业务开展短短时间内，由于价格低时效快，其他同行物流公司的货物都交由我们来运输。<br/>
+
+    针对中小型公司提供仓库，管理，发货第三方物流。<br/>
+其中企业可以按照自己的需求来申请仓库需要的面积3平米，5平米等都可。我们提供装卸，叉车等物流设备。按照客户要求每月进行商品盘点，使企业省去了储存难，装卸难，运输难的问题。
+
+
+				</div>	
+
+<!--
+				<div>
+					 
+				</div>	
+
+				<div>
+					 
+				</div>
+
+				<div>
+					
+				</div>
+-->
+
+			    </div>
+
+	</div>
+		</div>
+		<div class="foot">
+			 
+   		 <div class="inner"> 
+     <p>网站备案：xxxxxx<br></p> 
+     <p>大连甘井子区华北路427号  电话：xxxxx   邮编：xxxxxxx<br></p> 
+     <p>加盟合作请发送邮件至sunqinli@dlzhida.com  加盟热线：xxxxx<br></p> 
+     <p>Copyright(c)2015 大连广辉物流公司 ALL rights reserved.<br></p> 
+    	</div> 
+   
+		</div>
+
+	</div></body>
+</html>

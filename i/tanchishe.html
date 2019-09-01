@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>	
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		h3{
+			text-align: center;
+			display: none;
+			padding: 20px;
+		}
+		#title{
+			width: 400px;
+			margin: 0px auto;
+			padding: 20px;
+		}
+
+		#title p{
+			text-align: center;
+			color: blue; 
+		}
+		#title h4{
+			text-align: center;;
+			color:;
+		}
+		#map{
+			height: 400px;
+			width: 400px;
+			margin: 0px auto;
+			position:relative;
+			background:#C0D9D9 ;
+
+		}
+		#map div{
+			height: 20px;
+			width: 20px;
+			border-radius: 100%;
+			position: absolute;
+		}
+		#buttons{
+			width: 300px;
+			height: 200px;
+			margin: 20px auto 0px;
+			position: relative;
+		}
+		#buttons button{
+			height: 30px;
+			width: 100px;
+			position: absolute;
+		}
+
+		#zuo{
+			top: 30px;
+			left: 0px;
+		}
+
+		#xia{
+			top: 30px;
+			left: 100px;
+		}
+
+		#you{
+			top: 30px;
+			left: 200px;
+		}
+		#shang{
+			top: 0px;
+			left: 100px;
+		}
+
+
+	</style>
+	<script type="text/javascript">
+	
+		function Snake(){
+			this.color="blue";
+			this.body=[[5,3,null],[4,3,null],[3,3,null]];
+			k=0;
+			this.direct=39;
+			this.display=function(){
+
+			for (var i = this.body.length - 1; i >=0; i--) {
+					if (this.body[i][2]==null) {
+						this.body[i][2]=document.createElement('div');
+						this.body[i][2].style.background="yellow";
+						};
+					this.body[i][2].style.left=20*this.body[i][0]+'px';
+					this.body[i][2].style.top=20*this.body[i][1]+'px';
+					map.appendChild(this.body[i][2]);
+				};
+			}
+
+			this.move=function(){
+				for (var i = this.body.length - 1; i >0; i--) {
+					this.body[i][0]=this.body[i-1][0];
+					this.body[i][1]=this.body[i-1][1];
+				};
+				switch(this.direct){
+					case 39:
+					this.body[0][0]+=1;break;
+					case 40:
+					this.body[0][1]+=1;break;
+					case 37:
+					this.body[0][0]-=1;break;
+					case 38:
+					this.body[0][1]-=1;break;
+
+				}	
+				//判断撞墙
+				if (this.body[0][0]<0||this.body[0][0]>19||this.body[0][1]<0||this.body[0][1]>19) {
+					txt.innerHTML='你以为你的头比墙还要硬吗？';
+					return 0;
+				};
+				//判断撞自己
+				for (var i = this.body.length - 1; i >0; i--) {
+					if (this.body[0][0]==this.body[i][0]&&
+					this.body[0][1]==this.body[i][1])
+					{
+						txt.innerHTML='我选择死亡';
+						return 0;
+					}
+				//吃食物
+
+				if (this.body[0][0]==food.x&&this.body[0][1]==food.y) {
+					
+					var length=this.body.length-1;
+					var  bx=this.body[length][0];
+					var by=this.body[length][1];
+					this.body.push([bx,by,null]);
+					food.display();
+					k++;
+					eat.innerHTML='得分：'+ k*100;
+					if(k>=10&&k<19){
+						txt.innerHTML='Godlike';
+					}
+					if (k>=20) {
+						txt.innerHTML='超神啦！'
+					};
+
+				};
+					
+
+				};
+				this.display();
+				setTimeout("snake.move()",300-k*50>0?300-k*50:50);
+			}
+		}
+
+
+		function Food(){
+			this.color='#4F4F2F';
+			this._food=null;
+			this.x=0;
+			this.y=0;
+			this.display=function(){
+				if (this._food==null) {
+				this._food=document.createElement('div');
+				this._food.style.background=this.color;
+				map.appendChild(this._food);
+				};
+				
+				
+				this.x=Math.floor(Math.random()*19);
+				this.y=Math.floor(Math.random()*19);
+				for (var i = snake.body.length - 1; i >0; i--) {
+					if( snake.body[i][0]==this.x&&snake.body[i][1]==this.y)
+					{
+						food.display();
+					}
+				};
+				this._food.style.left=this.x*20+'px';
+				this._food.style.top=this.y*20+'px';
+				
+			}
+		}
+
+
+		window.onload=function(){
+			map=document.getElementById('map');
+			snake=new Snake();
+			food=new Food();
+			snake.move();
+			food.display();
+
+			txt=document.getElementById('txt');
+			eat=document.getElementById('eat');
+			window.addEventListener('keydown',kdirect,false);
+			function kdirect(ev){
+				var event=ev||event;
+				if (event.keyCode>=37&&event.keyCode<=40) {
+					snake.direct=event.keyCode;
+				};
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<div id="title">
+		<p id="eat">得分:&nbsp;&nbsp;&nbsp;</p>
+		<h4 id="txt">加油</h4>
+	</div>
+
+	<div id="map">	
+	</div>
+
+	<div id="buttons">
+	<button id="zuo" onclick="snake.direct=37" > 左 </button>
+	<button id="shang" onclick="snake.direct=38"> 上</button>
+	<button id="you" onclick="snake.direct=39">右</button>
+	<button id="xia" onclick="snake.direct=40">下</button>
+	</div>
+
+</body>
+</html>

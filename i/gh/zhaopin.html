@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="广辉,广辉物流">
+	<meta name="keywords" content="广辉,广辉物流">
+	<title>广辉物流</title>
+	<link rel="stylesheet" href="css.css">
+	
+	<script type="text/javascript">
+	window.onload=function(){
+		var lDiv=document.getElementById('leftdiv');
+		var oDiv=lDiv.getElementsByTagName('li');
+		var mainDiv=document.getElementById('main');
+		var aDiv=mainDiv.getElementsByTagName('div');
+
+		for (var i = 0; i < oDiv.length; i++) {
+			oDiv[i].index=i;
+			oDiv[i].onclick=function(){
+				
+				for (var i = 0; i < oDiv.length; i++) {
+					oDiv[i].className="";
+					aDiv[i].style.display="none";
+				};
+				this.className="liactive";
+				aDiv[this.index].style.display="block";
+			}
+
+		};
+
+	}
+	</script>
+
+</head>
+<body> 
+	<div class="wrapper">
+    
+		<div class="top">
+			<a href="index.html"><img src="images/logo.png"></a>
+			<img  class="fuwu" src="images/call.jpg">
+			</span> 
+					</div>
+		<div class="banner">
+			<ul>
+				<li>
+					<a href="index.html">首页</a>  <span></span>
+				</li>
+				<li>
+					<a href="about.html"> 关于广辉</a> <span></span>
+
+				</li>
+				<li>
+					<a href="youshi.html">公司优势</a><span></span>
+
+				</li>
+				<li>
+					<a href="chanpin.html"> 产品服务</a><span></span>
+
+				</li>
+				<li>
+					<a href="zhaopin.html"> 人才招聘</a><span></span>
+
+				</li>
+				<li>
+					<a href="lianxi.html">联系我们</a>
+	
+				</li>
+
+			</ul>
+		</div>
+		<div class="showpic2">
+			<img src="images/1.jpg">
+		</div>
+		<div class="content">
+			<div class="left">
+				 
+      <div class="sbox"> 
+       <div class="topic">人才招聘</div> 
+       <div class="blank">
+       <ul id="leftdiv">
+       <li class="liactive" >
+       		人才招聘
+       </li> 
+      
+        </ul>
+        
+        
+       </div> 
+      </div> 
+      <div class="HeightTab clearfix"></div> 
+                
+           
+			</div>
+
+
+
+	<div class="right">
+			<div class="position">
+				<span class="home-icon"><img src="images/box_icon2.png"></span><span style="color:#000">  &nbsp;你的位置:  &nbsp;&nbsp;</span> <span style="color:#ccc">首页》人才招聘</span>
+			</div>
+			<div class="main" id="main">
+				<div class="qiyegaikuang" style="display:block;height:auto;">	
+				<h1>广辉人才理念</h1> <br/>
+自信阳光：<br/>
+
+面对挑战，面对困境，自信是个人成功的基石。不自信，只会浅尝辄止；不自信，只会停步不前。只有心态积极，内心装满阳光，你的热情就会感染到身边的每一个人，自己也会在这种阳光的普照下，获得更多新生的力量和勇气。<br/>
+
+品德端正：<br/>
+
+地势坤，君子以厚德载物；天行健，君子以自强不息。以德励志，以德服人，品德端正者有如顶梁之柱，顶天立地，令人敬佩。<br/>
+
+善于学习：
+<br/>
+学无止境，在职业的道路上，唯有不断学习，不断总结前辈的经验，才能不断提升自我的综合素质，积累更多的智慧，从而从优秀走向卓越。
+
+诚信负责：<br/>
+
+人无信不立，诚信是个人立身之本。龙邦人必须做到言出必行，行必果。无论是对客户、加盟商还是身边同事，一旦有所承诺，就要全力以赴，对自己的承诺负责。<br/>
+
+
+
+敬业为本：<br/>
+
+专业源于敬业，敬业有两层含义：一是对工作负责，按质按量完成任务；二是主动工作，主动服务，在原有基础上加以改善，为企业、客户、社会创造更大价值。
+<br/>
+价值共创：<br/>
+
+没有完美的个人，只有完美的团队；个人的价值来源于团队，企业的价值来源于每一个敬业的员工，广辉鼓励员工在岗位创造自我价值。人无论自身知识有多丰富，能力有多大，一定要学会融入团队，群策群力，借助团队的力量成就企业，成长自己。<br/>
+				</div>	
+
+				<div>
+					 
+				</div>	
+
+				<div>
+					 
+				</div>
+
+				<div>
+					
+				</div>
+
+			</div>
+
+	</div>
+		</div>
+		<div class="foot">
+			 
+   		 <div class="inner"> 
+     <p>网站备案：xxxxxx<br></p> 
+     <p>大连甘井子区华北路427号  电话：xxxxx   邮编：xxxxxxx<br></p> 
+     <p>加盟合作请发送邮件至sunqinli@dlzhida.com  加盟热线：xxxxx<br></p> 
+     <p>Copyright(c)2015 大连广辉物流公司 ALL rights reserved.<br></p> 
+    	</div> 
+   
+		</div>
+
+	</div></body>
+</html>
