@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yuanjunwen.com" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
-github_username:  yjw6174
+github_username:  yuan3721
 
 # Build settings
 markdown: kramdown
