@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: YuanJunwen's Blog
+title: 墨呆
 email: yjw6174@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Always bear in mind that your own resolution to success is ...
@@ -18,3 +18,6 @@ github_username:  yuan3721
 # Build settings
 markdown: kramdown
 #kramdown
+sass:
+    sass_dir: _sass
+    style: compressed
